@@ -1,0 +1,258 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  justify-content: center;
+  color-scheme: light;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: white;
+  height: 100%;
+  width: 100%;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  /*Color variables*/
+  --lightgrey: #F4F3F3;
+  --grey: #DADADA;
+  --lightpurple: #DCD3F1;
+  --purple: #7D53DE;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#banner {
+  justify-content: center;
+  padding: 1em;
+  background-color: var(--lightgrey);
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+#bannerTitle{
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+
+}
+#banner h1{
+  color: var(--purple);
+  margin: 0;
+}
+
+#banner h4 {
+  color: black;
+  margin: 0;
+}
+
+#bannerNav{
+  background-color: var(--lightpurple);
+  width: 100%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bannerNav h3 {
+  margin: 5px;
+}
+#homepage{
+  display: flex;
+}
+#sideBar {
+  background-color: var(--purple);
+  margin: 0;
+  width: 20%;
+  height: 100vh;
+  padding: 2em;
+  text-align: center;
+  color: white;
+}
+
+#sideBar button {
+  background-color: white;
+  width: 100%;
+  color: black;
+  margin: 10px 0px;
+}
+
+#rightContent {
+  background-color: white;;
+  height: 100%;
+  width: 100%;
+  margin-left: 30%;
+  margin-top: 2%;
+  color: black;
+  text-align: center;
+  margin: 50px;
+  
+}
+
+#postsearch {
+  border: 3px solid var(--purple);
+  border-radius: 22px;
+  padding: 10px;
+  width: 40vh;
+}
+
+#postGallery{
+  color: black;
+  margin: 20px;
+}
+
+#pg-post{
+  border: 3px solid var(--lightpurple);
+  border-radius: 33px;
+  width: 90%;
+  margin: 20px 0px;
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+#pg-post-content *{
+  margin: 0; 
+  padding: 0;
+  text-align: left;
+}
+
+#pg-post-content h2{
+  size: 26px;
+}
+
+#pg-post-content p{
+  size: 20px;
+}
+
+#upvote{
+  justify-content: right;
+}
+
+#post-window{
+  color: black;
+  border: 3px solid var(--lightpurple);
+  border-radius: 33px;
+  width: 60%;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+#post-window-postedupdate{
+  display: flex;
+  justify-content: space-between;
+}
+
+#post-window-postedupdate button{
+  background-color: var(--purple);
+  color: white;
+  font-weight: bold;
+}
+
+#post-window-comments {
+
+  border: 3px solid var(--purple);
+  border-radius: 33px;
+  padding: 30px;
+}
+
+#post-window-comments input{
+  border: 3px solid var(--purple);
+  border-radius: 25px;
+  width: 20vh;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px;
+}
+
+#post-window-comments button{
+  background-color: var(--purple);
+  color: white;
+  font-weight: bold;
+}
+
+#newpost-view{
+  color: black;
+  border: 3px solid var(--lightpurple);
+  border-radius: 33px;
+  width: 60%;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+}
+
+#newpost-view input{
+  border: 3px solid var(--purple);
+  border-radius: 25px;
+  width: 20vh;
+  padding: 10px ;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+#newpost-view textarea{
+  border: 3px solid var(--purple);
+  border-radius: 25px;
+  width: 60%;
+  padding: 10px ;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+#newpost-view button{
+  background-color: var(--purple);
+  color: white;
+  font-weight: bold;
+}
+
+#content{
+  width: 20vh;
+  height: 20vh;
+}
+
+img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+#delete-post button{
+  background-color: "red";
+}
